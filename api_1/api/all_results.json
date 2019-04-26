@@ -1,0 +1,62 @@
+{
+    "url": "api/nums.php",
+    "response": "ноль",
+    "method": "GET"
+}
+{
+    "url": "api/nums/505",
+    "response": "пятьсот пять",
+    "method": "GET"
+}
+{
+    "url": "api/wdays?date=12.12.2028",
+    "response": "4",
+    "method": "GET"
+}
+{
+    "url": "api/eqs?a=1&b=2&c=3",
+    "response": [
+        null
+    ],
+    "method": "GET"
+}
+{
+    "url": "api/eqs?a=1&b=2&c=8",
+    "response": [
+        null
+    ],
+    "method": "GET"
+}
+{
+    "url": "api/eqs?a=1&b=2&c=-2",
+    "response": [
+        -1,
+        -1
+    ],
+    "method": "GET"
+}
+{
+    "url": "api/regs/72/",
+    "response": "Тюменская область",
+    "method": "GET"
+}
+{
+    "url": "api/fib/22",
+    "response": 17711,
+    "method": "GET"
+}
+{
+    "url": "api/fib/5",
+    "response": 5,
+    "method": "GET"
+}
+{
+    "url": "api/fib/6",
+    "response": 8,
+    "method": "GET"
+}
+{
+    "url": "api/fib/1",
+    "response": 1,
+    "method": "GET"
+}
