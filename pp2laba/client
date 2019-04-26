@@ -21,7 +21,7 @@ switch ($method)
 		break;
 
 	case "add":
-		if(($name = $_GET['name']) && ($telephone = $_GET['telephone'])
+		if(($name = $_GET['name']) && ($telephone = $_GET['telephone']))
 		{
 			mysqli_query($db, "CALL client_add('$name','$telephone')");
 		}
@@ -47,7 +47,6 @@ switch ($method)
 mysqli_close($db);
 
 $response = json_encode($result, JSON_UNESCAPED_UNICODE);
-echo $response;
 
 Save("save.json", $response);
 ?>
