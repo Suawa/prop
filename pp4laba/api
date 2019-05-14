@@ -1,0 +1,8 @@
+<?php
+require_once "save.php";
+$result = json_decode(file_get_contents("http://www.mocky.io/v2/5c7db5e13100005a00375fda"));
+$result->result = str_replace(" ", "_", $result->result);
+$res = json_encode($result->result, JSON_UNESCAPED_UNICODE);
+Save("save.json",$res);
+echo $res;
+?>
