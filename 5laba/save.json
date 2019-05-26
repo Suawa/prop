@@ -1,0 +1,90 @@
+{
+    "url": "localhost/5laba/pp2laba/client?method=sel",
+    "response": "[{\"id_client\":\"1\",\"full_name\":\"Петров\"},{\"id_client\":\"2\",\"full_name\":\"Афанасий\"},{\"id_client\":\"3\",\"full_name\":\"Измененный\"}]",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/client?method=add&name=Дмитрий",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/client?method=ch&id=2&name=вапвап",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/client?method=add&name=Удалить",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/client?method=del&id=5",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/client?method=sel",
+    "response": "[{\"id_client\":\"1\",\"full_name\":\"Петров\"},{\"id_client\":\"2\",\"full_name\":\"вапвап\"},{\"id_client\":\"3\",\"full_name\":\"Измененный\"},{\"id_client\":\"4\",\"full_name\":\"Дмитрий\"}]",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/request?method=sel",
+    "response": "[{\"full_name\":\"Петров\",\"name\":\"Вставить дверь\",\"count\":\"200\"},{\"full_name\":\"Петров\",\"name\":\"Починить потолок\",\"count\":\"0\"},{\"full_name\":\"вапвап\",\"name\":\"Починить потолок\",\"count\":\"0\"},{\"full_name\":\"Измененный\",\"name\":\"Донести пакеты\",\"count\":\"0\"},{\"full_name\":\"вапвап\",\"name\":\"Вставить дверь\",\"count\":\"111\"}]",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/request?method=add&clientid=4&serviceid=2&count=4",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/request?method=ch&id=1&count=1000",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/request?method=del&id=6",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/request?method=sel",
+    "response": "[{\"full_name\":\"Петров\",\"name\":\"Вставить дверь\",\"count\":\"1000\"},{\"full_name\":\"Петров\",\"name\":\"Починить потолок\",\"count\":\"0\"},{\"full_name\":\"вапвап\",\"name\":\"Починить потолок\",\"count\":\"0\"},{\"full_name\":\"Измененный\",\"name\":\"Донести пакеты\",\"count\":\"0\"},{\"full_name\":\"Дмитрий\",\"name\":\"Вставить дверь\",\"count\":\"4\"}]",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/service?method=sel",
+    "response": "[{\"id_service\":\"1\",\"name\":\"Донести пакеты\",\"price\":\"200\"},{\"id_service\":\"2\",\"name\":\"Вставить дверь\",\"price\":\"500\"},{\"id_service\":\"3\",\"name\":\"Починить потолок\",\"price\":\"2000\"}]",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/service?method=add&name=ТестоваяУслуга&price=15",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/service?method=ch&name=Починить&price=300000&id=3",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/service?method=add&name=Удалить&price=45",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/service?method=sel",
+    "response": "[{\"id_service\":\"1\",\"name\":\"Донести пакеты\",\"price\":\"200\"},{\"id_service\":\"2\",\"name\":\"Вставить дверь\",\"price\":\"500\"},{\"id_service\":\"3\",\"name\":\"Починить\",\"price\":\"300000\"},{\"id_service\":\"4\",\"name\":\"ТестоваяУслуга\",\"price\":\"15\"},{\"id_service\":\"5\",\"name\":\"Удалить\",\"price\":\"45\"}]",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/service?method=del&id=5",
+    "response": "null",
+    "method": "GET"
+}
+{
+    "url": "localhost/5laba/pp2laba/service?method=sel",
+    "response": "[{\"id_service\":\"1\",\"name\":\"Донести пакеты\",\"price\":\"200\"},{\"id_service\":\"2\",\"name\":\"Вставить дверь\",\"price\":\"500\"},{\"id_service\":\"3\",\"name\":\"Починить\",\"price\":\"300000\"},{\"id_service\":\"4\",\"name\":\"ТестоваяУслуга\",\"price\":\"15\"}]",
+    "method": "GET"
+}

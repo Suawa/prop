@@ -1,0 +1,52 @@
+<?php
+header('Content-Type: application/json');
+
+require_once 'db.php';
+require_once 'save.php';
+
+$method = $_GET['method'];
+
+$result;
+switch ($method)
+{
+	case "sel":
+		if($id = $_GET['id'])
+		{
+			$result = mysqli_fetch_all(mysqli_query($db, "CALL request_single($id)"), MYSQLI_ASSOC);
+		}
+		else
+		{
+			$result = mysqli_fetch_all(mysqli_query($db, "CALL request_select()"), MYSQLI_ASSOC);
+		}
+		break;
+
+	case "add":
+		if(($client_id = $_GET['clientid']) && ($service_id = $_GET['serviceid'])&&($count = $_GET['count']))
+		{
+			mysqli_query($db, "CALL request_add('$client_id','$service_id','$count')");
+		}
+		break;
+
+	case "ch":
+		if(($id = $_GET['id'])&&($count=$_GET['count']))
+		{
+			mysqli_query($db, "CALL request_change('$count',$id)");
+		}
+		break;
+
+	case "del":
+		if($id = $_GET['id'])
+		{
+			mysqli_query($db, "CALL request_delete($id)");
+		}
+		break;
+
+	default:		
+		break;
+}
+mysqli_close($db);
+
+$response = json_encode($result, JSON_UNESCAPED_UNICODE);
+
+Save("save.json", $response);
+?>
